@@ -49,6 +49,12 @@ app.get('/', (req, res) => {
     res.send('Welcome to the Survival Store App!')
 })
 
+//home
+// app.get('/', (req, res) =>{
+//     res.render('Home')
+// })
+
+
 //Index route
 app.get("/survivalitems", (req, res) => {
     Survival.find({}, (error, allSurvivalItems) => {
@@ -107,8 +113,8 @@ app.put('/survivalitems/:id', (req, res) => {
 })
 //Create - send the filled form to the database and create a new record
 app.post('/survivalitems', (req, res) => {
-    let survivalItem = req.body
-    Survival.create(survivalItem, (error, createdSurvivalItems) => {
+    let survivalItemBody = req.body
+    Survival.create(survivalItemBody, (error, createdSurvivalItems) => {
         res.redirect('/survivalitems')
     })
 })
@@ -120,7 +126,7 @@ app.get('/survivalitems/:id/edit', (req, res) => {
             res.render(
                 'Edit',
                 {
-                    survivalitems: foundSurvivalItems //pass in the found pokemon so we can prefill the form
+                    survivalitems: foundSurvivalItems //pass in the found survivalitems so we can prefill the form
                 }
             );
         } else {
