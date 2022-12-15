@@ -10,3 +10,4 @@ const mongoose = require('mongoose')
  const Survival = mongoose.model('Survival', survivalSchema)
 
  module.exports = Survival
+ 
