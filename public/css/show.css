@@ -1,0 +1,19 @@
+body {
+    background-color: rgb(87, 124, 124);
+}
+
+img{
+    max-height: 17vw;
+    min-height: 17vw;
+    max-width:17vw;
+    min-width: 17vw;
+ 
+ /*Scale down will take the necessary specified space that is 100px x 100px without stretching the image*/
+     /* object-fit:scale-down; */
+ 
+ }
+
+ .product-container{
+    position: relative;
+    text-align: center; 
+}

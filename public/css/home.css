@@ -1,0 +1,23 @@
+
+
+body {
+    background-image: url("https://s.abcnews.com/images/US/survivalists-preppers-abc-jef-171102_16x9_1600.jpg"); 
+}
+
+h1 {
+    display: table;  /* keep the background color wrapped tight */
+    padding:5px;font-size:20px;background-color:rgb(253, 253, 253);color: black;
+    font-size: 28pt;
+    
+}
+  
+  /* visited link */
+a {
+    font-weight: bolder;
+    display: table; /* keep the background color wrapped tight */
+    padding:5px;font-size:20px;background-color:rgb(253, 253, 253);color:red; 
+    font-size: 20pt;
+    
+   }
+  
+ 

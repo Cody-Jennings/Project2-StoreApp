@@ -1,10 +1,5 @@
 const React = require("react")
 
-const myStyle = {
-    color: '#ffffff',
-    backgroundColor: '#000000',
-}
-
 class Show extends React.Component {
     render() {
         const { survivalitems } = this.props
@@ -23,14 +18,11 @@ class Show extends React.Component {
 
 
         return (
-            <div>
-                <link rel="stylesheet" type="text/css" href="../css/style.css" />
+            <div className='container'>
+                <link rel="stylesheet" type="text/css" href="../css/show.css" />
+                <div className='product-container'></div>
                 <h1>{survivalitems.name.charAt(0).toUpperCase() + survivalitems.name.slice(1)}'s</h1>
                 <img src={survivalitems.image}></img>{renderForm()}
-                {/* <form action={`/survivalitems/buy/${survivalitems.id}?_method=PUT`} method="POST">
-                    <input type="submit" value=" Buy " />
-                </form> */}
-                {/* <p>There are currently {survivalitems.inventory} {survivalitems.name}'s left. <br></br></p> */}
                 <p>The {survivalitems.name}'s current price is ${survivalitems.price}. <br></br></p>
                 
                 <form action={`/survivalitems/${survivalitems._id}?_method=DELETE`} method="POST">

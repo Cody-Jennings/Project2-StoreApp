@@ -10,7 +10,7 @@ const methodOverride = require('method-override')
 const mongoURI = process.env.MONGO_URI
 const db = mongoose.connection
 
-app.use(express.static('public'))
+app.use(express.static(__dirname + '/public'))
 
 
 //connect to mongo
@@ -45,14 +45,14 @@ mongoose.set('strictQuery', true)
 app.set('view engine', 'jsx');
 app.engine('jsx', require('express-react-views').createEngine())
 
-app.get('/', (req, res) => {
-    res.send('Welcome to the Survival Store App!')
-})
+// app.get('/', (req, res) => {
+//     res.send('Welcome to the Survival Store App!')
+// })
 
 //home
-// app.get('/', (req, res) =>{
-//     res.render('Home')
-// })
+app.get('/', (req, res) =>{
+    res.render('Home')
+})
 
 
 //Index route
