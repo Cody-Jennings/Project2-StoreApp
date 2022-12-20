@@ -1,28 +1,24 @@
 const React = require('react')
 
 class New extends React.Component {
-    render() {
-      return (
-        <div>
-          <link rel="stylesheet" type="text/css" href="../css/style.css"/>
-          <h1>Add a New Survival Item</h1>
-          <form action='/survivalitems' method='POST'>
-            Name: <input type='text' name='name'/>
-            <br />
-            Inventory: <input type='number' name='inventory'/>
-            <br />
-            Price: <input type='number' name='price'/>
-            <br />
-            Image jpg url: <input type='text' name='image'/>
-            <br />
-            <br></br>
-            <input type='submit' name='' value='Add this Survival Item'/>
-          </form>
-          <br></br>
-          <a href="/survivalitems">Back to Survival Items</a>
-        </div>
-      )
-    }
+  render() {
+    return (
+      <div className="container">
+        <h1>Add a New Survival Item</h1>
+        <link rel="stylesheet" type="text/css" href="/css/new.css" />
+        <form action='/survivalitems' method='POST'>
+        <br></br><div className="formprops">Name: <input className="forminput" type='text' name='name' /><br />
+        <br></br>Inventory: <input className="forminput" type='number' name='inventory' /><br />
+        <br></br> Price: <input className="forminput" type='number' name='price' /><br />
+        <br></br>Image jpg url: <input className="forminput" type='text' name='image' /></div><br />
+        <br></br>
+        <input className="button-54" type='submit' name='' value='Add this Survival Item' />
+        </form>
+        <br></br>
+        <a href="/survivalitems" className="button-54">Back to Survival Items</a>
+      </div>
+    )
   }
-  
-  module.exports = New
+}
+
+module.exports = New

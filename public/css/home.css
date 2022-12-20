@@ -9,6 +9,11 @@ h1 {
     padding:5px;font-size:20px;background-color:rgb(253, 253, 253);color: black;
     font-size: 28pt;
     
+    
+}
+
+title{
+    font-family: "Open Sans", sans-serif;
 }
   
   /* visited link */
@@ -17,7 +22,30 @@ a {
     display: table; /* keep the background color wrapped tight */
     padding:5px;font-size:20px;background-color:rgb(253, 253, 253);color:red; 
     font-size: 20pt;
-    
-   }
+}
+
+.button-54 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    letter-spacing: 2px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000;
+    cursor: pointer;
+    border: 3px solid;
+    padding: 0.25em 0.5em;
+    box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+    position: relative;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    background-color: white;
+}
+
+.button-54:active {
+    box-shadow: 0px 0px 0px 0px;
+    top: 5px;
+    left: 5px;
+}
   
  

@@ -6,12 +6,12 @@ class Index extends React.Component {
     const { allSurvivalItems } = this.props
 
     return (
-      <DefaultLayout title={"Codys Survival Items"}>
+      <DefaultLayout title={"Cody's Survival Items"}>
         <a name="top"></a>
         <link rel="stylesheet" type="text/css" href="/css/index.css" />
         <div className="links">
           <nav>
-            <br></br><a href='/survivalitems/new'>Add a New Survival Item</a> | <a href="/">Back to Cody's Survival Shop Home</a><br></br>
+            <br></br><a href='/survivalitems/new' className="button-54">Add a New Survival Item</a> | <a href="/" className="button-54">Back to Cody's Survival Shop Home</a><br></br>
           </nav>
         </div><ul>
 
@@ -19,14 +19,14 @@ class Index extends React.Component {
             return (
               <li>
                 <div className="product-container">
-                  <div className="product-name">{survivalitems.name.charAt(0).toUpperCase() + survivalitems.name.slice(1)}'s<br></br>Price: ${survivalitems.price}</div><br></br>
+                  <div className="product-name">{survivalitems.name.charAt(0).toUpperCase() + survivalitems.name.slice(1)}<br></br>Price: ${survivalitems.price}</div><br></br>
                   <a href={`/survivalitems/${survivalitems.id}`}><img src={survivalitems.image}></img></a>
                 </div>
               </li>
             )
           })}
         </ul>
-        <a href="#top">Back to top</a>
+        <a href="#top" className="button-54">Back to top</a>
       </DefaultLayout>
     )
   }
