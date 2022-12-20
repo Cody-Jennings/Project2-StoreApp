@@ -111,6 +111,7 @@ app.put('/survivalitems/:id', (req, res) => {
         res.redirect(`/survivalitems/${req.params.id}`)//redirecting to the Show page
     })
 })
+
 //Create - send the filled form to the database and create a new record
 app.post('/survivalitems', (req, res) => {
     let survivalItemBody = req.body

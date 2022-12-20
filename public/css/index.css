@@ -17,13 +17,13 @@ img{
     min-height: 17vw;
     max-width:17vw;
     min-width: 17vw;
- 
+    border-radius: 15px;
  /*Scale down will take the necessary specified space that is 100px x 100px without stretching the image*/
      /* object-fit:scale-down; */
  
  }
 .product-name{
-    position:absolute;
+    position: absolute;
     bottom: -8%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -31,6 +31,7 @@ img{
     font-size:20px;
     background-color:black; color: white;
     inline-size: max-content;
+    border-radius: 15px;
 }
 
 ul{
