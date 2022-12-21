@@ -16,14 +16,14 @@ You can fork or clone the repo by copy and pasting the following in your termina
 
 `git clone https://github.com/Cody-Jennings/Project2-StoreApp.git`
 
-### CODY'S SURVIVAL SHOP/ HOW TO 
+### CODY'S SURVIVAL SHOP 
 
-The first page or landing page is a simple title and link to my index page which displays all of my store's current survival items and is reflected in my database as well. My store concept comes from my desire to build an underground bunker of survival neccessities and help others accomplish the same by providing a one-stop-shop for all their survival needs. Should my store not have a specific survival item, any can be added.
+The landing page/home page has a simple title and link to my index page which displays all of my store's current survival items and is reflected in my database as well. My store concept comes from my desire to build an underground bunker of survival necessities and help others accomplish the same by providing a one-stop-shop for all their survival needs. Should my store not have a specific survival item, any can be added.
 
 ![](Images/storeAppHome.png)
 
 
-Once the user clicks "CODY'S SURVIVAL ITEM INVENTORY" on the home page they will be directed to the Index page. This page shows the user current survival items inventory. The user can view the item's price and by clicking the image, and is directed to the items show page. The top buttons include "ADD A NEW SURVIVAL ITEM" and "BACK TO CODY'S SURVIVAL HOME". These buttons direct the user to add or create a survival item or to go back to the home page.
+Once the user clicks "CODY'S SURVIVAL ITEM INVENTORY" on the home page they will be directed to the Index page. This page shows the user the current survival items inventory. The user can view the item's price and by clicking the image, is directed to the items show page. The top buttons include "ADD A NEW SURVIVAL ITEM" and "BACK TO CODY'S SURVIVAL HOME". These buttons direct the user to add or create a survival item or to go back to the home page.
 
 ![](Images/indexPageTop.png)
 
@@ -38,16 +38,17 @@ The Add a New Survival Item/create page allows the user to add a new survival it
 ![](Images/newSurvivalItem.png)
 
 
-Once the user clicks on a survival item they will be directed to it's show page. The show page displays the properties that the user already inserted into the form on the add new survival item page. The show page also has four buttons a "BUY", "DELETE", "EDIT THIS SURVIVAL ITEM", AND "BACK TO CODY'S SURVIVAL SHOP". The "BUY" button decrements the items inventory by one per click. The "DELETE" button deletes the item and erases it's show page and its position on the index page. The "EDIT THIS SURVIVAL ITEM" takes the user to the edit page, and "BACK TO CODY'S SURVIVAL SHOP" redirects the user to the index page. 
+Once the user clicks on a survival item they will be directed to it's show page. The show page displays the properties that the user already inserted into the form on the add new survival item page. The show page also has four buttons a "BUY", "DELETE", "EDIT THIS SURVIVAL ITEM", AND "BACK TO CODY'S SURVIVAL SHOP". The "BUY" button decrements the item's inventory by one per click. The "DELETE" button deletes the item and erases it's show page and its position on the index page. The "EDIT THIS SURVIVAL ITEM" takes the user to the edit page, and "BACK TO CODY'S SURVIVAL SHOP" redirects the user to the index page. 
 
 ![](Images/showSurvivalItem.png)
 
 
 If an item's inventory hits 1 remaining and is purchased an "Out of Stock" message appears and the buy button will disapper.
+
 ![](Images/showOOSSurvivalItem.png)
 
 
-The "EDIT THIS SURVIVAL BUTTON" allows the users to edit the four different fields of that item. They can edit the name, price, inventory and even the image jpg url. These changes can reflect market prices or change of names and stock inventory. This is a great tool to test the out of stock feature. Once the changes are made the user can hit "SUBMIT CHANGES' and be redirected back to the show page. 
+The "EDIT THIS SURVIVAL BUTTON" allows the users to edit the four different fields of that item. The default values will populate in the input fields but can be edited. Users can edit the name, price, inventory and even the image jpg url. These changes can reflect market price changes, change of names, and stock inventory. This is a great tool to test the out of stock feature. Once the changes are made the user can hit "SUBMIT CHANGES' and be redirected back to the show page with updated properties. 
 
 ![](Images/editSurvivalItem.png)
 
@@ -75,9 +76,9 @@ All changes made in the index, show, edit, and new pages are reflected in the da
 - [Amazon](https://www.amazon.com/)
 
 ## Acknowledgements
- 
+
+- Tishana Trainor 
 - Kasper Kain
-- Tishana Trainor
 - Hadia Shafique
 - Arianna Bunn
 - Sharon Ogbonna
