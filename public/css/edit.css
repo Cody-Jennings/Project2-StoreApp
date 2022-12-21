@@ -57,3 +57,9 @@ h1 {
   top: 5px;
   left: 5px;
 }
+
+.copyright{
+  display: flex;
+  position: absolute;
+  bottom: 135px;
+}

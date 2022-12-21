@@ -24,6 +24,9 @@ class Show extends React.Component {
                     <input className="button-54" type="submit" value="DELETE" />
                 </form>
                 <br></br><a href={`/survivalitems/${survivalitems._id}/edit`} className="button-54">Edit This Survival Item</a> | <a href="/survivalitems" className="button-54">Back to Cody's Survival Shop</a>
+                <div className='copyright'>
+                    <span>&copy; Cody Jennings</span>
+                </div>
             </div>
         )
     }
