@@ -6,7 +6,7 @@ The world we live in is full of uncertainties and impending doom. Preppers, surv
 
 
 ### Youtube link for viewer pleasure
-[Youtube]()
+[Youtube](https://www.youtube.com/watch?v=uz7pJfZlVYo)
 ### Github link
 [Cody's Survival Shop](https://github.com/Cody-Jennings/Project2-StoreApp.git)
 
@@ -68,12 +68,12 @@ All changes made in the index, show, edit, and new pages are reflected in the da
 
 - https://www.markdownguide.org/cheat-sheet/
 - https://meakaakka.medium.com/a-beginners-guide-to-writing-a-kickass-readme-7ac01da88ab3
-- Youtube tutorials
 - [MDN](https://developer.mozilla.org/en-US/)
 - [w3Schools](https://www.w3schools.com/default.asp)
 - [GetCssScan](https://getcssscan.com/css-buttons-examples)
 - [Stack Overflow](https://stackoverflow.com/questions/4747520/simple-css-form-layout)
 - [Amazon](https://www.amazon.com/)
+- Youtube tutorials
 
 ## Acknowledgements
 

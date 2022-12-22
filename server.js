@@ -18,7 +18,6 @@ mongoose.connect(mongoURI)
 mongoose.connect(mongoURI, { useNewUrlParser: true, useUnifiedTopology: true })
 
 
-
 // Connection Error/Success
 // Define callback functions for various events
 db.on("error", (err) => console.log(err.message + " is mongod not running?"));
@@ -64,7 +63,7 @@ app.get("/survivalitems", (req, res) => {
     })
 })
 
-//New route to get a form to create a new pokemon record
+//New route to get a form to create a new record
 app.get('/survivalitems/new', (req, res) => {
     res.render('New')
 })
@@ -83,16 +82,15 @@ app.get('/survivalitems/new', (req, res) => {
 //  db.close()
 // })
 
-//Delete - Delete this one record        //This is the acronym INDUCES
+//Delete - Delete this one record        
 app.delete('/survivalitems/:id', (req, res) => {
     Survival.findByIdAndRemove(req.params.id, (err, data) => {
-        res.redirect('/survivalitems');//redirect back to pokemon index
+        res.redirect('/survivalitems');//redirect back to index
     })
 })
 
+
 //Update - modifying a record
-
-
 app.put('/survivalitems/buy/:id', (req, res) => {
     Survival.findById(req.params.id, (err, foundSurvivalItems) => {
         let newSurvivalItem = foundSurvivalItems
@@ -112,6 +110,7 @@ app.put('/survivalitems/:id', (req, res) => {
     })
 })
 
+
 //Create - send the filled form to the database and create a new record
 app.post('/survivalitems', (req, res) => {
     let survivalItemBody = req.body
@@ -119,6 +118,7 @@ app.post('/survivalitems', (req, res) => {
         res.redirect('/survivalitems')
     })
 })
+
 
 //Edit - go to database and get the record to update
 app.get('/survivalitems/:id/edit', (req, res) => {
@@ -135,6 +135,7 @@ app.get('/survivalitems/:id/edit', (req, res) => {
         }
     })
 })
+
 
 //Show Route
 app.get('/survivalitems/:id', (req, res) => {
