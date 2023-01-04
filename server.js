@@ -146,6 +146,7 @@ app.get('/survivalitems/:id', (req, res) => {
     })
 })
 
-app.listen(PORT, function () {
-    console.log('Listening on port 3000');
-});
+app.listen(PORT, () => {
+    console.log(`Listening to port ${PORT}`)
+})
+
