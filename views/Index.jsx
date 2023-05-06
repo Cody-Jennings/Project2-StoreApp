@@ -27,9 +27,6 @@ class Index extends React.Component {
           })}
         </ul>
         <a href="#top" className="button-54">Back to top</a>
-        <div className='copyright'>
-          <span>&copy; Cody Jennings</span>
-        </div>
       </DefaultLayout>
     )
   }

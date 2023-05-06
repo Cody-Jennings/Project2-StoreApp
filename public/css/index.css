@@ -20,8 +20,6 @@ img{
     max-width:17vw;
     min-width: 17vw;
     border-radius: 15px;
- /*Scale down will take the necessary specified space that is 100px x 100px without stretching the image*/
-     /* object-fit:scale-down; */
  
  }
 .product-name{
@@ -46,6 +44,8 @@ ul{
     max-width: 75vw;
     margin: auto;
     max-height: 75vw;
+    margin-bottom: 50px; /* Add margin to create space between buttons and items */
+    margin-top: 25px;
     
 }
 
@@ -78,8 +78,68 @@ ul{
     left: 5px;
 }
 
-.copyright{
-    display: flex;
-    position: absolute;
-    bottom: -490px;
+.button-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+/* Add some margin to the top two buttons to create space */
+.button-54:first-child {
+    margin-right: 10px;
+}
+
+.button-54:nth-child(2) {
+    margin-right: 10px;
+}
+
+/* Media queries for smaller screens */
+@media only screen and (max-width: 768px) {
+    img {
+        max-height: 30vw;
+        min-height: 30vw;
+        max-width: 30vw;
+        min-width: 30vw;
+    }
+    .product-name {
+        bottom: -12%;
+        font-size: 16px;
+        padding: 2px 2px;
+    }
+    ul {
+        max-width: 90vw;
+        max-height: 90vw;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    img {
+        max-height: 50vw;
+        min-height: 50vw;
+        max-width: 50vw;
+        min-width: 50vw;
+    }
+    .product-name {
+        bottom: -20%;
+        font-size: 14px;
+        padding: 1px 1px;
+    }
+    ul {
+        max-width: 100vw;
+        max-height: 100vw;
+    }
+}
+
+@media (max-width: 768px) {
+    .back-to-top {
+      right: 3%;
+      bottom: 5%;
+    }
+  }
+
+  /* Add some space between the top row of items and the buttons */
+@media screen and (max-width: 767px) {
+    ul {
+      margin-bottom: 100px;
+    }
   }
